@@ -1,0 +1,25 @@
+{
+  "name": "fb-bot",
+  "version": "1.0.0",
+  "description": "fb messsenger bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "var express = require('express')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/https://github.com/KrishMunot/FB-Messenger-Bot"
+  },
+  "keywords": [
+    "fb",
+    "messenger",
+    "bot"
+  ],
+  "author": "Krish Munot",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "request": "^2.71.0"
+  }
+}
