@@ -3,6 +3,11 @@ var app = express()
 
 app.set('port', (process.env.PORT || 5000))
 
+app.configure(function() {
+	app.use(express.bodyParser())
+	app.use(app.router)
+})
+
 app.get('/', function (req, res) {
 	res.send('Hello World! I am new born bot!')
 })
