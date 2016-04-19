@@ -14,7 +14,10 @@ app.get('/webhook/', function (req, res) {
 	res.send('Error, wrong token')
 })
 
-app.post(console.log())
+app.post('/webhook/', function (req, res) {
+	console.log(req.body)
+	res.sendStatus(200)
+})
 
 app.listen(app.get('port'), function() {
 	console.log('running on port', app.get('port'))
