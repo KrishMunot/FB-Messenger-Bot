@@ -9,7 +9,7 @@ app.configure(function() {
 })
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({extendd: false})
+app.use(bodyParser.urlencoded({extendd: false}))
  
  // parse application/json
  app.use(bodyParser.json())
