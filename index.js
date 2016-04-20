@@ -8,6 +8,12 @@ app.configure(function() {
 	app.use(app.router)
 })
 
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({extendd: false})
+ 
+ // parse application/json
+ app.use(bodyParser.json())
+
 app.get('/', function (req, res) {
 	res.send('Hello World! I am new born bot!')
 })
