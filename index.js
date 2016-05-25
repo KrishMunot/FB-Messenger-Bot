@@ -115,3 +115,9 @@ function sendGenericMessage(sender) {
 app.listen(app.get('port'), function() {
 	console.log('running on port', app.get('port'))
 })
+
+if (event.postback) {
+			text = JSON.stringify(event.postback)
+			sendTextMessage(sender, "Postback received: "+text.substring(0, 200), token)
+			continue
+		}
